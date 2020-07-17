@@ -3,11 +3,24 @@ import React, { Component } from 'react';
 class App extends Component {
     constructor() {
         super();
-        this.state = { count: 0 };
+        console.log('constrctor');
+    }
+
+    componentDidMount() {
+        console.log('componentDidMount');
+    }
+
+    componentDidUpdate() {
+        console.log('componentDidUpdate');
+    }
+
+    componentWillUnmount() {
+        console.log('unmount');
     }
 
     render() {
-        return <div></div>;
+        console.log('render');
+        return <div>Hello World</div>;
     }
 }
 
